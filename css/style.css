@@ -1,0 +1,58 @@
+*{
+	margin: 0;padding: 0;
+}
+.shadow{
+	width: 1100px;height: 1px;margin: 60px auto 10px;box-shadow: 2px 2px 5px #3ee71e;
+}
+.demo{
+	width: 1100px;margin: 10px auto;
+}
+.demo li{
+	float:left;width:214px;height:300px; background:url('../images/bg_icon.png') no-repeat;
+	list-style:none;margin:30px; position:relative; cursor:pointer;overflow:hidden;
+}
+.demo li:nth-child(1){background-color:#00A0EA;}
+.demo li:nth-child(2){background-color:#97C412;}
+.demo li:nth-child(3){background-color:#ED9644;}
+.demo li:nth-child(4){background-color:#5CC8B0;}
+.demo li div{position: absolute;text-align: center;transition: all 1s;}
+.demo li .icon{
+	width: 80px;height: 80px;top: 40px;left:70px; margin: auto;
+}
+.demo li .icon img{
+	width: 80px;height: 80px;
+}
+.demo li .info{
+	width: 214px;height: 130px;bottom: 0px;transition-delay:0.5s;
+}
+.demo li .more{
+	width: 174px;height: 110px; background:rgba(0,0,0,0.4); left:214px;bottom: 0px;
+	text-align:left; padding:20px;
+}
+.demo li .more .title{
+	border-left:5px solid #fff; display:block;padding-left:10px;
+}
+/*公共样式*/
+p{
+	color: #fff;margin: 5px auto;text-transform: uppercase;text-shadow:2px 2px 5px #000;
+}
+p.mak{
+	font-size: 30px;
+}
+p.btn{
+	width: 100px;line-height: 32px;margin: 10px auto;background: rgba(0,0,0,.2);
+}
+/*hover效果*/
+.demo ul li:hover{
+	background-image:none; 
+}
+.demo ul li:hover .icon{
+	transform:rotate(360deg);
+}
+.demo ul li:hover .info{
+	bottom: -130px;
+}
+.demo ul li:hover .more{
+	left: 0;
+	transition-delay: 1s;
+}
